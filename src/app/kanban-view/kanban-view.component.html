@@ -1,0 +1,17 @@
+<div class='kanban_view'>
+  <div class='kanban_controls'>
+    <div class='edit_card'>
+      <input type="text" [(ngModel)]="newCardName" class="add_card add_card_input" placeholder="New Task Name"/>
+      <button class='add_card_btn' (click)="onAddCard()" [disabled]="newCardName!=''?false:true">Add</button>
+    </div>
+    <div class='edit_card'>
+        <input class='selected_card_input' type="text" [value]="selectedCardName" placeholder="Selected Task will appear">
+        <button class='card_move_back_btn' [disabled]="disableBackward" (click)="onMoveBackCard()">Move Back</button>
+        <button class='card_forward_back_btn' [disabled]="disableForward" (click)="onMoveForwardCard()">Move Forward</button>
+        <button class='card_delete_back_btn' [disabled]="disableDelete" (click)="onDelete()">Delete</button>
+      </div>
+  </div>
+  <div class='kanban_stage_container'>
+    <app-kanban-stage *ngFor="let stage of stages" [stage]='stage' (onCardselect)='onCardselect($event)'></app-kanban-stage>
+  </div>
+</div>

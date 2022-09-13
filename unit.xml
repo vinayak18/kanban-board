@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<testsuite name="HeadlessChrome 105.0.5195 (Windows 10.0.0)" package="unit" timestamp="2022-09-13T07:31:30" id="0" hostname="LAPTOP-8L0JVTM8" tests="10" errors="0" failures="0" time="0.724">
+  <properties>
+    <property name="browser.fullName" value="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/105.0.5195.102 Safari/537.36"/>
+  </properties>
+  <testcase name="KanbanStageComponent should render stages correct name and cards" time="0.225" classname=".KanbanStageComponent"/>
+  <testcase name="KanbanStageComponent On click of card, onCardselect method should call with correct params" time="0.079" classname=".KanbanStageComponent"/>
+  <testcase name="KanbanCardComponent Cards should rendered correctly" time="0.043" classname=".KanbanCardComponent"/>
+  <testcase name="KanbanCardComponent On click of card, onCardSelected method should call with correct params" time="0.03" classname=".KanbanCardComponent"/>
+  <testcase name="KanbanViewComponent On click of card in last stage that card should be selected. With appropriate UI changes" time="0.067" classname=".KanbanViewComponent"/>
+  <testcase name="KanbanViewComponent Kanban view should rendered with correct stages and cards" time="0.076" classname=".KanbanViewComponent"/>
+  <testcase name="KanbanViewComponent Kanban view should rendered with all controls" time="0.051" classname=".KanbanViewComponent"/>
+  <testcase name="KanbanViewComponent Task Move forward." time="0.043" classname=".KanbanViewComponent"/>
+  <testcase name="KanbanViewComponent Task Move Backward." time="0.05" classname=".KanbanViewComponent"/>
+  <testcase name="KanbanViewComponent On click of card in first stage that card should be selected. With appropriate UI changes" time="0.06" classname=".KanbanViewComponent"/>
+  <system-out>
+    <![CDATA[HeadlessChrome 105.0.5195 (Windows 10.0.0) WARN: 'Spec 'KanbanViewComponent On click of card in last stage that card should be selected. With appropriate UI changes' has no expectations.'
+,HeadlessChrome 105.0.5195 (Windows 10.0.0) LOG: [Object{id: 1, name: 'Backlog', cards: [..., ...]}, Object{id: 2, name: 'To Do', cards: [..., ...]}, Object{id: 3, name: 'Ongoing', cards: []}, Object{id: 4, name: 'Done', cards: [...]}]
+,HeadlessChrome 105.0.5195 (Windows 10.0.0) LOG: [Object{id: 1, name: 'Backlog', cards: [..., ...]}, Object{id: 2, name: 'To Do', cards: [...]}, Object{id: 3, name: 'Ongoing', cards: [...]}, Object{id: 4, name: 'Done', cards: [...]}]
+,HeadlessChrome 105.0.5195 (Windows 10.0.0) WARN: 'Spec 'KanbanViewComponent On click of card in first stage that card should be selected. With appropriate UI changes' has no expectations.'
+
+]]>
+  </system-out>
+  <system-err/>
+</testsuite>
